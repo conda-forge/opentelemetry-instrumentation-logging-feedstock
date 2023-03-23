@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-instrumentation-logging" %}
-{% set version = "0.37b0" %}
+{% set version = "0.38b0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_instrumentation_logging-{{ version }}.tar.gz
-  sha256: 31b17817ef745bfe9b41102a00f6aa87ba5e0a776a62266c87ab04b7ea420b25
+  sha256: ab3c3fb671336dd11c182a73d245c8bfb1b249af5a009ae88e582453c2336009
 
 build:
   noarch: python
@@ -22,8 +22,9 @@ requirements:
   run:
     - python >=3.7
     - opentelemetry-api ~=1.12
-    - opentelemetry-instrumentation ==0.37b0
+    - opentelemetry-instrumentation ==0.38b0
     # - opentelemetry-test-utils ==0.37b0
+    # - opentelemetry-test-utils ==0.38b0
 
 test:
   imports:
